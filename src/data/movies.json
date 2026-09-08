@@ -19,8 +19,14 @@
   },
   {
     "id": 4,
-    "title": "Gladiator",
-    "year": 2000,
-    "genre": "Action"
+    "title": "Blade Runner 2049",
+    "year": 2017,
+    "genre": "Sci-Fi"
+  },
+  {
+    "id": 5,
+    "title": "Dune",
+    "year": 2021,
+    "genre": "Sci-Fi"
   }
 ]
