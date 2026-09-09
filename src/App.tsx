@@ -1,6 +1,7 @@
 import movies from './data/movies.json';
 import MovieCard from "./components/MovieCard";
 import { useState } from 'react';
+import "./App.css";
 
 function App() {
   const [watched, setWatched] = useState<number[]>([]);
@@ -30,6 +31,7 @@ function App() {
           title={movie.title}
           year={movie.year}
           genre={movie.genre}
+          isWatched={watched.includes(movie.id)}
           onWatched={() => {
             if (!watched.includes(movie.id)) {
               setWatched([...watched, movie.id]);
