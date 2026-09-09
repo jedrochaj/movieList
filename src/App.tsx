@@ -10,11 +10,9 @@ function App() {
     if (filter === "watched") {
       return watched.includes(movie.id);
     }
-
     if (filter === "unwatched") {
       return !watched.includes(movie.id);
     }
-
     return true;
   });
 
