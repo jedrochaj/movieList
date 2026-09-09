@@ -28,7 +28,7 @@ function MovieCard(props: Props) {
                 {[1, 2, 3, 4, 5].map((stars) => {
                     const isFilled = rating >= stars;
                     return (
-                        <button key={stars} onClick={() => setRating(stars)} style={{ color: isFilled ? "gold" : "lightgray" }}>
+                        <button key={stars} onClick={()=>setRating(stars)} style={{color: isFilled ? "gold" : "gray"}}>
                             {isFilled ? "★" : "☆"}
                         </button>
                     );
